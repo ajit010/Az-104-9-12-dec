@@ -116,7 +116,7 @@ Exercise 5 :
 
 Exercise 6 :
     
-   VMSS (Virtual Machine Scaling Set)
+   Create a VMSS (Virtual Machine Scaling Set)
 
    1. orchestration - uniform
     
