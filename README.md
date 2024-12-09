@@ -110,7 +110,7 @@ Exercise 5 :
         It will display "running" status ..
         
         
-  8. Visit the ip-address of Linux-Vm to check apache2 default webapge ...
+    8. visit the ip-address of Linux-Vm to check apache2 default webapge ...
     
     
 
