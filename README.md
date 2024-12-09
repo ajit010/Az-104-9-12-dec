@@ -107,7 +107,7 @@ Exercise 5 :
         sudo systemctl status apache2
         
         
-        >> IT will display "running" status ..
+        It will display "running" status ..
         
         
   8. Visit the ip-address of Linux-Vm to check apache2 default webapge ...
