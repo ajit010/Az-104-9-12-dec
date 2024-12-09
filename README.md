@@ -113,9 +113,6 @@ Exercise 5 :
     > Visit the ip-address of Linux-Vm to check apache2 default webapge ...
     
     
-==============================================================================================================
-
-
 
 Exercise 6 :
     
@@ -166,7 +163,11 @@ sudo chown www-data:www-data /var/www/htmlindex.html;
         
    11. after few minutes (10-12 min), look at the cpu utilization and no. of instances in vmss
  
-   12. 
+   12. Go to Activity log under VMSS to check the scaling activity based on scaling condition ...
+
+   13. Just like CPU utilization, you can add any metric to scaling condition ...
+
+   14. You can use vertical scaling to resize the instances too.. (will apply on new instances only) ...
 
 
 
