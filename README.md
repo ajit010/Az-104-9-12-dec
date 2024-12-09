@@ -110,7 +110,7 @@ Exercise 5 :
         >> IT will display "running" status ..
         
         
-    > Visit the ip-address of Linux-Vm to check apache2 default webapge ...
+  8. Visit the ip-address of Linux-Vm to check apache2 default webapge ...
     
     
 
@@ -126,9 +126,9 @@ Exercise 6 :
     
    4. scaling mode - autoscaling
 
-    scaling policy - > 70, add one and <40 , decrease one
+      scaling policy - > 70, add one and <40 , decrease one
     
-    mininmum, desired = 2 and max = 4
+      mininmum, desired = 2 and max = 4
     
    5. networking - select the interface and enable the public-ip
 
