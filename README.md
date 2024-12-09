@@ -116,58 +116,58 @@ Exercise 5 :
 
 Exercise 6 :
     
-   Create a VMSS (Virtual Machine Scaling Set)
+    Create a VMSS (Virtual Machine Scaling Set)
 
-   1. orchestration - uniform
+    1. orchestration - uniform
     
-   2. size - b1s
+    2. size - b1s
 
-   3. os image - ubuntu 22.04
+    3. os image - ubuntu 22.04
     
-   4. scaling mode - autoscaling
+    4. scaling mode - autoscaling
 
-      scaling policy - > 70, add one and <40 , decrease one
+        scaling policy - > 70, add one and <40 , decrease one
     
-      mininmum, desired = 2 and max = 4
+        mininmum, desired = 2 and max = 4
     
-   5. networking - select the interface and enable the public-ip
+    5. networking - select the interface and enable the public-ip
 
-   6. add ports - http(80) ans ssh (22)
+    6. add ports - http(80) ans ssh (22)
     
-   7. Under "Advanced section" add user data :
+    7. Under "Advanced section" add user data :
 
 
 
-   User data script -
+    User data script -
 
 
-   #!/bin/bash
-   sudo apt-get update -y;
-   sudo apt install apache2 -y;
-   echo "Hello, welcome to VM" | sudo tee /var/www/html/index.html;
-   sudo chown www-data:www-data /var/www/htmlindex.html;
+    #!/bin/bash
+    sudo apt-get update -y;
+    sudo apt install apache2 -y;
+    echo "Hello, welcome to VM" | sudo tee /var/www/html/index.html;
+    sudo chown www-data:www-data /var/www/htmlindex.html;
 
 
 
-   8. Rest - keep as default and create
+    8. Rest - keep as default and create
 
-   9. visit the ip addresss of both machines of vmss and you will get same msg displayed...
+    9. visit the ip addresss of both machines of vmss and you will get same msg displayed...
     
-   10. SSH into both of machines :
+    10. SSH into both of machines :
     
-     ssh username@public-ip-vm
+         ssh username@public-ip-vm
         
-     sudo apt install stress
+         sudo apt install stress
     
-     sudo stress --cpu 10 --timeout 900
+         sudo stress --cpu 10 --timeout 900
         
-   11. after few minutes (10-12 min), look at the cpu utilization and no. of instances in vmss
+    11. after few minutes (10-12 min), look at the cpu utilization and no. of instances in vmss
  
-   12. Go to Activity log under VMSS to check the scaling activity based on scaling condition ...
+    12. Go to Activity log under VMSS to check the scaling activity based on scaling condition ...
 
-   13. Just like CPU utilization, you can add any metric to scaling condition ...
+    13. Just like CPU utilization, you can add any metric to scaling condition ...
 
-   14. You can use vertical scaling to resize the instances too.. (will apply on new instances only) ...
+    14. You can use vertical scaling to resize the instances too.. (will apply on new instances only) ...
 
 
 
