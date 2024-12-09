@@ -138,14 +138,14 @@ Exercise 6 :
 
 
 
-User data script -
+   User data script -
 
 
-#!/bin/bash
-sudo apt-get update -y;
-sudo apt install apache2 -y;
-echo "Hello, welcome to VM" | sudo tee /var/www/html/index.html;
-sudo chown www-data:www-data /var/www/htmlindex.html;
+   #!/bin/bash
+   sudo apt-get update -y;
+   sudo apt install apache2 -y;
+   echo "Hello, welcome to VM" | sudo tee /var/www/html/index.html;
+   sudo chown www-data:www-data /var/www/htmlindex.html;
 
 
 
