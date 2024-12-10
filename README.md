@@ -188,8 +188,57 @@ Exercise 8 :
     
     2. Use Ipv4 , SKU - basic , ip assgnmnent - Dynamic ...
         
+
+
+Exercise 9 :
+    
+    Create 2 VM and Load Balancer:
         
         
+    1. Create Vm-1 and Vm-2 (ubuntu 22.04)
+    
+    2. Size- b1s
+    
+    3. Availibity set - create new and use same in both VMs
+    
+    4. Networking - select the existing network and default subnet and vm1-1 ip and vm-2 ip respectively
+    
+    5. Advanced - "User data"
+    
+        for vm1 -
+        
+        
+        #!/bin/bash
+        sudo apt-get update -y;
+        sudo apt install apache2 -y;
+        echo "Hello, welcome to 1st VM" | sudo tee /var/www/html/index.html;
+        sudo chown www-data:www-data /var/www/htmlindex.html;
+    
+    
+        for vm2 -
+        
+        #!/bin/bash
+        sudo apt-get update -y;
+        sudo apt install apache2 -y;
+        echo "Hello, welcome to 2nd VM" | sudo tee /var/www/html/index.html;
+        sudo chown www-data:www-data /var/www/htmlindex.html;
+    
+    
+     6. Create both VMs and acess them using their Ips and check if they display correct msg
+        
+     7. Create a Load balancer 
+    
+     8. frontend config - lb-ip
+        
+        backend pool - select vnet - select both vms
+        
+        add a lb rule and health prope ...
+        
+        
+     9. save this info and lb will be created ...
+    
+     10. Visit the front-end ip of LB to check distribution of traffic among VMs ...
+    
         
     
     
