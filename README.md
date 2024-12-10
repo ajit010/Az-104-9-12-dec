@@ -241,6 +241,25 @@ Exercise 9 :
     
         
     
+Exercise 10 :
+    
+    
+    Create Azure webapp :
+        
+        
+    1. Search for App service >> webapp
+    
+    2. OS - windows, Runtime - .NET 8.0 (LTS)
+    
+    3. Pricing Model - Basic 
+    
+    4. Networking - allow public access
+    
+    5. Review + Create ...
+    
+    6. Once it is deployed, you will get a Domain name for azure webapp..
+    
+    7. Visit the domain url and it will display homepage of webapp ...
     
     
     
