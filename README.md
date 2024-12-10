@@ -170,10 +170,24 @@ Exercise 6 :
     14. You can use vertical scaling to resize the instances too.. (will apply on new instances only) ...
 
 
+Exercise 7 :
+    
+    Create a  VPC and 2 subnets
+    
+    1. Create a VPC of CIDR range : (10.0.0.0/16)
+        
+    2. Create 2 subnets - subnet1 (10.0.1.0/24) and subnet2 (10.0.2.0/24)
+    
+    
 
-
-
-
+Exercise 8 :
+    
+    Create Public Ip address :
+    
+    1. Create 3 public ip (lb-ip, vm1-ip and vm2-ip)
+    
+    2. Use Ipv4 , SKU - basic , ip assgnmnent - Dynamic ...
+        
         
         
         
