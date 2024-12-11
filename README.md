@@ -263,8 +263,73 @@ Exercise 10 :
     
     
     
+Exercise 11:
     
     
+    Create a sample .Net application in Vs code and deploy to azure webapp
+    
+    
+Exercise 12:
+    
+    Create Azure SQL Database :
+        
+        
+    1. Create a db and db-server (basic sql auth. username and pswd)
+    
+    2. location - central india/canada central
+    
+    3. workload - dev (service tier - basic)
+    
+    4. backup+storage -- LRS
+    
+    5. networking - connectivity - public end point and enable both firewall rules
+    
+    6. keep default for rest of the config
+    
+    7. db and db-server will be created ...
+    
+    
+    Add some data in db :
+        
+    query :
+        
+        
+     CREATE TABLE Course
+(
+   CourseID int,   
+   CourseName varchar(1000),
+   Rating numeric(2,1)
+);
+
+INSERT INTO Course(CourseID,CourseName,Rating) VALUES(1, 'Docker and Kubernetes',4.5);
+
+INSERT INTO Course(CourseID,CourseName,Rating) VALUES(2,'AZ-204 Azure Developer',4.6);
+
+INSERT INTO Course(CourseID,CourseName,Rating) VALUES(3,'AZ-104 Administrator',4.7);
+
+SELECT * FROM Course;    
+     
+    
+    
+============================================================================================================
+
+Exercise 13:
+    
+    
+    Create a Storage account :
+        
+        
+    1. name - ajitsg22
+    
+    2. primary service - azure blob storage
+    
+    3. peformace tier - standard
+    
+    4. Data redundancy - LRS
+    
+    5. Networking -- enable public access
+    
+    6. Review and Create ...
     
     
     
